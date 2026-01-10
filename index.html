@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Job Application Tracker</h1>
+
+<div class="container">
+
+  <!-- FORM SECTION -->
+  <form id="job-form" class="form-section">
+
+    <h2>Add / Edit Application</h2>
+
+    <label>Company</label>
+    <input type="text" id="company" required>
+
+    <label>Role</label>
+    <input type="text" id="role" required>
+
+    <label>Location</label>
+    <input type="text" id="location">
+
+    <label>Applied Date</label>
+    <input type="date" id="date">
+
+    <label>Status</label>
+    <select id="status">
+      <option value="Applied">Applied</option>
+      <option value="Interview">Interview</option>
+      <option value="Offer">Offer</option>
+      <option value="Rejected">Rejected</option>
+    </select>
+
+    <label>Notes</label>
+    <textarea id="notes"></textarea>
+
+    <button type="submit">Save Application</button>
+     <button id="export-btn">Export CSV</button>
+  </form>
+
+ 
+  <!-- LIST SECTION -->
+  <div class="list-section">
+    <h2>Your Applications</h2>
+
+    <!-- FILTER -->
+    <select id="filter-status">
+      <option value="All">All</option>
+      <option value="Applied">Applied</option>
+      <option value="Interview">Interview</option>
+      <option value="Offer">Offer</option>
+      <option value="Rejected">Rejected</option>
+    </select>
+
+<!-- STATS -->
+<div class="stats">
+  <span id="stat-total">Total: 0</span>
+  <span id="stat-applied">Applied: 0</span>
+  <span id="stat-interview">Interview: 0</span>
+  <span id="stat-offer">Offer: 0</span>
+  <span id="stat-rejected">Rejected: 0</span>
+</div>
+
+<!-- FILTER -->
+<select id="filter-status">
+  <option value="All">All</option>
+  <option value="Applied">Applied</option>
+  <option value="Interview">Interview</option>
+  <option value="Offer">Offer</option>
+  <option value="Rejected">Rejected</option>
+</select>
+
+    
+    <div id="applications-list"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
