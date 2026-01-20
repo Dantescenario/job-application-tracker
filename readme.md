@@ -1,3 +1,6 @@
+LIVE LINK: https://glittery-centaur-192dca.netlify.app/
+
+
 📋 Job Application Tracker
 
 A simple, offline-first Job Application Tracker to organize your job hunt in one clean dashboard.
